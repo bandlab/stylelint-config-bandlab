@@ -1,0 +1,50 @@
+extends: stylelint-config-standard
+plugins:
+  - stylelint-order
+  - stylelint-scss
+rules:
+  at-rule-empty-line-before:
+    - always
+    -
+      except:
+        - blockless-after-same-name-blockless
+        - inside-block
+        - first-nested
+      ignore:
+        - after-comment
+        - inside-block
+  declaration-empty-line-before:
+    - never
+    -
+      ignore:
+        - after-comment
+  font-family-name-quotes: always-where-recommended
+  function-url-quotes: never
+  number-leading-zero: never
+  selector-attribute-quotes: always
+  selector-type-no-unknown: true
+#  string-quotes: double ## TODO
+  value-list-max-empty-lines: 1
+  order/order:
+    - custom-properties
+    - dollar-variables
+    - declarations
+    - type: at-rule
+      name: include
+      parameter: breakpoint
+      hasBlock: true
+    - type: at-rule
+      name: media
+      hasBlock: true
+    - rules
+  order/properties-alphabetical-order: true
+  scss/at-import-no-partial-leading-underscore: true
+  scss/at-mixin-no-argumentless-call-parentheses: true
+  scss/dollar-variable-empty-line-before:
+    - always
+    -
+      except:
+      - first-nested
+      - after-comment
+      - after-dollar-variable
+#  scss/selector-no-redundant-nesting-selector: true ## TODO

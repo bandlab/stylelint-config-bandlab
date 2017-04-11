@@ -1,0 +1,25 @@
+{
+  "name": "@bandlab/stylelint-config-bandlab",
+  "version": "1.0.0",
+  "description": "BandLab's shareable config for stylelint",
+  "keywords": [
+    "bandlab",
+    "stylelint",
+    "stylelint-config"
+  ],
+  "main": ".stylelintrc.yml",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bandlab/stylelint-config-bandlab.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bandlab/stylelint-config-bandlab/issues"
+  },
+  "homepage": "https://github.com/bandlab/stylelint-config-bandlab#readme",
+  "dependencies": {
+    "stylelint-config-standard": "16.0.0",
+    "stylelint-order": "0.4.3",
+    "stylelint-scss": "1.4.3"
+  }
+}
