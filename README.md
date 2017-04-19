@@ -13,7 +13,7 @@ npm install --save-dev @bandlab/stylelint-config-bandlab
 Create a `.stylelintrc.yml` configuration file and extends it with `stylelint-config-bandlab`:
 
 ```yml
-extends: stylelint-config-bandlab
+extends: '@bandlab/stylelint-config-bandlab'
 ```
 
 Lint stylesheets via CLI:
