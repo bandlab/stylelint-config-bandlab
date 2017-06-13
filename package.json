@@ -1,6 +1,6 @@
 {
   "name": "@bandlab/stylelint-config-bandlab",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "BandLab's shareable config for stylelint",
   "keywords": [
     "bandlab",
