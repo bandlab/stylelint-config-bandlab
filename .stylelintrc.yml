@@ -13,6 +13,7 @@ rules:
       ignore:
         - after-comment
         - inside-block
+  at-rule-no-unknown: null # Prefer scss/at-rule-no-unknown
   declaration-empty-line-before:
     - never
     -
@@ -39,7 +40,8 @@ rules:
     - rules
   order/properties-alphabetical-order: true
   scss/at-import-no-partial-leading-underscore: true
-  scss/at-mixin-argumentless-call-parentheses: true
+  scss/at-mixin-argumentless-call-parentheses: always
+  scss/at-rule-no-unknown: true
   scss/dollar-variable-empty-line-before:
     - always
     -
