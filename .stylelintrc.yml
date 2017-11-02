@@ -39,7 +39,7 @@ rules:
     - rules
   order/properties-alphabetical-order: true
   scss/at-import-no-partial-leading-underscore: true
-  scss/at-mixin-no-argumentless-call-parentheses: true
+  scss/at-mixin-argumentless-call-parentheses: true
   scss/dollar-variable-empty-line-before:
     - always
     -
