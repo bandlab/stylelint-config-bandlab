@@ -20,6 +20,7 @@ rules:
       ignore:
         - after-comment
   font-family-name-quotes: always-where-recommended
+  font-family-no-missing-generic-family-keyword: null
   function-url-quotes: never
   no-descending-specificity: null
   number-leading-zero: never
