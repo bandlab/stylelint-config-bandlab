@@ -21,6 +21,7 @@ rules:
         - after-comment
   font-family-name-quotes: always-where-recommended
   function-url-quotes: never
+  no-descending-specificity: null
   number-leading-zero: never
   selector-attribute-quotes: always
   selector-type-no-unknown: true
