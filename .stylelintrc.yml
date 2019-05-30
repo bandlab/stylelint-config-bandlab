@@ -23,7 +23,10 @@ rules:
   no-descending-specificity: null
   number-leading-zero: never
   selector-attribute-quotes: always
-  selector-type-no-unknown: true
+  selector-type-no-unknown:
+    - true
+    - ignore:
+        - custom-elements
   #  string-quotes: double ## TODO
   value-list-max-empty-lines: 1
   order/order:
