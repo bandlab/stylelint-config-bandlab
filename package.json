@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/bandlab/stylelint-config-bandlab#readme",
   "dependencies": {
-    "stylelint-config-standard": "^19.0.0",
-    "stylelint-order": "^3.1.1",
-    "stylelint-scss": "^3.11.1"
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0"
   }
 }
