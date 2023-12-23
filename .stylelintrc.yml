@@ -1,9 +1,18 @@
 extends: stylelint-config-standard
 customSyntax: postcss-scss
 plugins:
+  - "@stylistic/stylelint-plugin"
   - stylelint-order
   - stylelint-scss
 rules:
+  "@stylistic/block-opening-brace-space-before": "always"
+  "@stylistic/indentation": 2
+  "@stylistic/max-line-length": null
+  "@stylistic/no-eol-whitespace": true
+  "@stylistic/no-missing-end-of-source-newline": true
+  "@stylistic/number-leading-zero": never
+  "@stylistic/string-quotes": null
+  "@stylistic/value-list-max-empty-lines": 1
   annotation-no-unknown: null # Interfere with Sass !global !default
   at-rule-empty-line-before:
     - always
@@ -24,15 +33,14 @@ rules:
   function-no-unknown: null # Interfere with Sass functions
   function-url-quotes: never
   import-notation: null # Interfere with Sass imports
+  media-query-no-invalid: null #Interfere with media queries using Sass variables
   no-descending-specificity: null
-  number-leading-zero: never
   selector-attribute-quotes: always
   selector-type-no-unknown:
     - true
     - ignore:
         - custom-elements
   #  string-quotes: double ## TODO
-  value-list-max-empty-lines: 1
   order/order:
     - custom-properties
     - dollar-variables
@@ -46,7 +54,6 @@ rules:
       hasBlock: true
     - rules
   order/properties-alphabetical-order: true
-  scss/at-import-no-partial-leading-underscore: true
   scss/at-mixin-argumentless-call-parentheses: always
   scss/at-rule-no-unknown: true
   scss/dollar-variable-empty-line-before:
@@ -55,4 +62,5 @@ rules:
         - first-nested
         - after-comment
         - after-dollar-variable
+  scss/load-no-partial-leading-underscore: true
 #  scss/selector-no-redundant-nesting-selector: true ## TODO
