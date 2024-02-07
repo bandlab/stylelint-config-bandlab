@@ -7,6 +7,7 @@ plugins:
 rules:
   "@stylistic/block-opening-brace-space-before": "always"
   "@stylistic/indentation": 2
+  "@stylistic/max-empty-lines": 1
   "@stylistic/max-line-length": null
   "@stylistic/no-eol-whitespace": true
   "@stylistic/no-missing-end-of-source-newline": true
