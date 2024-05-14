@@ -41,7 +41,6 @@ rules:
     - true
     - ignore:
         - custom-elements
-  #  string-quotes: double ## TODO
   order/order:
     - custom-properties
     - dollar-variables
