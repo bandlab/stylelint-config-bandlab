@@ -12,7 +12,6 @@ rules:
   "@stylistic/no-eol-whitespace": true
   "@stylistic/no-missing-end-of-source-newline": true
   "@stylistic/number-leading-zero": never
-  "@stylistic/string-quotes": null
   "@stylistic/value-list-max-empty-lines": 1
   "@stylistic/at-rule-name-case": lower
   "@stylistic/at-rule-name-space-after": always-single-line
