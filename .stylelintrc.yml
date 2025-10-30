@@ -80,17 +80,36 @@ rules:
         - after-comment
         - inside-block
   at-rule-no-unknown: null # Prefer scss/at-rule-no-unknown
+  color-function-alias-notation: null
   declaration-empty-line-before:
     - never
     - ignore:
         - after-comment
+  declaration-property-value-keyword-no-deprecated:
+    - true
+    - ignoreKeywords:
+      - break-word
+  declaration-property-value-no-unknown: null # Prefer scss/declaration-property-value-no-unknown
   font-family-name-quotes: always-where-recommended
   font-family-no-missing-generic-family-keyword: null
   function-no-unknown: null # Interfere with Sass functions
   function-url-quotes: never
   import-notation: null # Interfere with Sass imports
   media-query-no-invalid: null #Interfere with media queries using Sass variables
+  nesting-selector-no-missing-scoping-root:
+    - true
+    - ignoreAtRules:
+      - mixin
+  no-invalid-position-declaration:
+    - true
+    - ignoreAtRules:
+      - mixin
   no-descending-specificity: null
+  property-no-deprecated:
+    - true
+    - ignoreProperties:
+      - clip
+      - word-wrap
   selector-attribute-quotes: always
   selector-type-no-unknown:
     - true
@@ -111,6 +130,7 @@ rules:
   order/properties-alphabetical-order: true
   scss/at-mixin-argumentless-call-parentheses: always
   scss/at-rule-no-unknown: true
+  scss/declaration-property-value-no-unknown: true
   scss/dollar-variable-empty-line-before:
     - always
     - except:
